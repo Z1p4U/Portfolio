@@ -1,0 +1,9 @@
+@import "../node_modules/swiper/swiper.min.css";
+
+/* Bro CK's NavBar */
+.myGlass {
+  /* background: rgba(255, 255, 255, 0.3); */
+  width: 100wh;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(9px);
+}
