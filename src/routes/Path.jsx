@@ -6,20 +6,22 @@ import Contact from "../pages/Contact";
 import About from "../pages/Contact";
 import Footer from "../components/Footer";
 import Projects from "../pages/Projects";
+import Credits from "../pages/Credits";
 
 const Path = () => {
   return (
     <>
-      <div>
-        <Navbar />
+      <Navbar />
+      <div className=" container mx-auto ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/credits" element={<Credits />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
