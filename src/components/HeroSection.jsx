@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import { Tilt } from "react-tilt";
 import "animate.css";
 import { Button } from "@mantine/core";
-
+import { FiFacebook, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
@@ -87,28 +87,40 @@ const HeroSection = () => {
                 collaborate and bring your web ideas to life!
               </p>
             </div>
+            <div className="my-6 flex flex-col gap-3 justify-start">
+              <div className="">
+                <button className=" btn">Explore Our Works</button>
+              </div>
 
-            <div className=" mt-5 flex justify-center align-middle items-center">
-              <Button
-                variant="outline"
-                color="red"
-                radius="xl"
-                size="md"
-                compact
-              >
-                Explore Our Works
-              </Button>
+              <div className=" flex gap-2 align-middle items-center">
+                <button className=" icon-btn">
+                  <FiFacebook />
+                </button>
+                <button className=" icon-btn">
+                  <FiGithub />
+                </button>
+                <button className=" icon-btn">
+                  <FiLinkedin />
+                </button>
+                <button className=" icon-btn">
+                  <FiTwitter />
+                </button>
+              </div>
             </div>
           </div>
           <div className=" col-start-1 md:col-start-8 col-span-12 md:col-span-4 h-fit">
-          <Tilt
-          options={defaultOptions}
-          className={' w-[300px] md:w-[250px] h-[450px] mx-auto'}
-        >
-          <div className="tilt">
-          <img className="profile w-[250px] md:w-[300px] h-[400px]" src="https://www.seekpng.com/png/detail/62-628547_tom-jerry-png-boomerang-tv-tom-and-jerry.png" alt="" />
-          </div>
-        </Tilt>
+            <Tilt
+              options={defaultOptions}
+              className={" w-[300px] md:w-[250px] h-[450px] mx-auto"}
+            >
+              <div className="tilt">
+                <img
+                  className="profile w-[250px] md:w-[300px] h-[400px]"
+                  src="https://www.seekpng.com/png/detail/62-628547_tom-jerry-png-boomerang-tv-tom-and-jerry.png"
+                  alt=""
+                />
+              </div>
+            </Tilt>
           </div>
         </div>
       </div>
