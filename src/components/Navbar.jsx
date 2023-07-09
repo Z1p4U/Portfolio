@@ -116,10 +116,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className="progress-bar-container absolute left-0 top-7 w-full">
-          <div
-            className="progress-bar-indicator"
-            style={{ width: `${scrollTop}%` }}
-          ></div>
+        <div className="w-full h-1.5">
+          <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-1.5" style={{ width: `${scrollTop}%` }}></div>
+        </div>
         </div>
       </div>
       {/* inthere */}

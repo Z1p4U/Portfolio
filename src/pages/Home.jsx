@@ -12,6 +12,7 @@ const Home = () => {
         {/* <ProjectShowcase /> */}
         {/* <Skills /> */}
         <TimelineComponent />
+        <section className=" h-screen"></section>
       </div>
     </div>
   );
