@@ -23,7 +23,7 @@ const TimelineComponent = () => {
 
 
   return (
-    <div>
+    <div className=" overflow-x-hidden">
           <Timeline className="custom-timeline" align="alternate">
     <Timeline.Item dot={<CreditCardIcon />}>
       <p className=" wow animate__fadeInRight">March 1, 10:20</p>

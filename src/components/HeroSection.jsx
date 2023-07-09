@@ -22,7 +22,7 @@ const HeroSection = () => {
     <>
       <div className=" mt-40">
         <div className=" grid grid-cols-12">
-          <div className=" col-start-1 col-span-7 px-5 py-10">
+          <div className=" col-start-1 col-span-12 md:col-span-7 px-5 py-10">
             <div className=" mb-5 text-[#3c3e41ae] text-xs grid grid-cols-12">
               <div className=" col-start-1 col-span-6">
                 <span className=" me-3">C R A F T I N G </span>
@@ -100,26 +100,13 @@ const HeroSection = () => {
               </Button>
             </div>
           </div>
-          <div className=" col-start-8 col-span-4 h-fit">
+          <div className=" col-start-1 md:col-start-8 col-span-12 md:col-span-4 h-fit">
           <Tilt
           options={defaultOptions}
-          style={{ height: 450, width: 250, margin: "0 auto" }}
+          className={' w-[300px] md:w-[250px] h-[450px] mx-auto'}
         >
           <div className="tilt">
-            <div className="card">
-              <div className="img-container">
-                <img className="profile" src="https://www.seekpng.com/png/detail/62-628547_tom-jerry-png-boomerang-tv-tom-and-jerry.png" alt="" />
-              </div>
-              <div className="card-details">
-                <h2>I'm Shin Khant</h2>
-                <p>
-                  Iron Man is a fictional superhero appearing in American comic
-                  books published by Marvel Comics. The character was co-created
-                  by writer and editor Stan Lee, developed by scripter Larry
-                  Lieber, and designed by artists Don Heck and Jack Kirby.{" "}
-                </p>
-              </div>
-            </div>
+          <img className="profile w-[250px] md:w-[300px] h-[400px]" src="https://www.seekpng.com/png/detail/62-628547_tom-jerry-png-boomerang-tv-tom-and-jerry.png" alt="" />
           </div>
         </Tilt>
           </div>
