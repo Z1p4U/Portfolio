@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import {AiOutlineUser} from "react-icons/ai"
 
@@ -13,7 +13,19 @@ const Navbar = () => {
     }
   };
 
-  const [burger, setBurger] = useState(true);
+  const [burger,setBurger] = useState(false);
+  let [clipPath,setClipPath] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (burger === true && clipPath < 150) {
+        setClipPath((prev) => prev + 30);
+      }
+      if (burger === false && clipPath > 0) {
+        setClipPath((prev) => prev - 30);
+      }
+    }, 150);
+    return () => clearInterval(interval);
+  }, [burger, clipPath]);
 
   window.addEventListener("scroll", scrollHandler);
   return (
@@ -23,8 +35,8 @@ const Navbar = () => {
           scroll ? " bg-[#E7F6ED]" : "shadow bg-white/60"
         }  z-50 w-full h-[80px] items-center flex fixed top-0 left-0 myGlass opacity-50`}
       >
-        <div className={` container px-[13rem] mx-auto `}>
-          <div className=" flex justify-between items-center ">
+        <div className={` container md:px-[0rem] lg:px-[13rem] mx-auto `}>
+          <div className=" w-full flex justify-between items-center px-5 md:px-0 m-0 ">
             <div>
               <span className=" text-[25px] font-[500]">Hously</span>
             </div>
@@ -38,9 +50,24 @@ const Navbar = () => {
               <h3>About us</h3>
               <h3>Contact</h3>
             </div>
-            <div onClick={() => setBurger(!burger)} className=" md:hidden">
-              burger
-            </div>
+            <div className=" relative md:hidden">
+           <button className=" burger" onClick={() => setBurger(!burger)}>Burger</button>
+          {/* <div className={burger ? 'bg-clip-path' : 'bg-clip path active'}>
+            <ul className={burger ? 'nav-items active' : 'nav-items'}>
+              <li>Works</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+            </ul>
+          </div> */}
+          <div className={burger ? 'bg-clip-path' : "bg-clip-path active"} style={{ clipPath: `circle(${clipPath}% at 92% 3rem)`,transition: 'clip-path 0.7s',transitionTimingFunction: "cubic-bezier(0.175, 0.885, 0.32, 1.275)" }}>
+            <ul className={burger ? 'nav-items active' : 'nav-items'}>
+              <li className={burger ? "anniSlideDown" : "anniSlideUp"}>Works</li>
+              <li className={burger ? "anniSlideDown ani_delay_2" : "anniSlideUp ani_delay_2"}>About Us</li>
+              <li className={burger ? "anniSlideDown ani_delay_4" : "anniSlideUp ani_delay_4"}>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+
           </div>
         </div>
       </div>

@@ -2,7 +2,8 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import ProjectShowcase from "../components/ProjectShowcase";
 import Skills from "../components/Skills";
-import Timeline from "../components/Timeline";
+import TimelineComponent from "../components/Timeline";
+import { Accordion } from "../components/accordion/Accordion"
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
         <HeroSection />
         {/* <ProjectShowcase /> */}
         {/* <Skills /> */}
-        {/* <Timeline /> */}
+        <TimelineComponent />
+        <Accordion/>
       </div>
     </div>
   );

@@ -1,7 +1,21 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { Tilt } from "react-tilt";
 import "animate.css";
 import { Button } from "@mantine/core";
+
+
+const defaultOptions = {
+  reverse: false, // reverse the tilt direction
+  max: 35, // max tilt rotation (degrees)
+  perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+  speed: 1000, // Speed of the enter/exit transition
+  transition: true, // Set a transition on enter/exit.
+  axis: null, // What axis should be disabled. Can be X or Y.
+  reset: true, // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+};
 
 const HeroSection = () => {
   return (
@@ -87,10 +101,27 @@ const HeroSection = () => {
             </div>
           </div>
           <div className=" col-start-8 col-span-4 h-fit">
-            <img
-              src="https://www.seekpng.com/png/detail/62-628547_tom-jerry-png-boomerang-tv-tom-and-jerry.png"
-              className=" bg-white h-fit"
-            />
+          <Tilt
+          options={defaultOptions}
+          style={{ height: 450, width: 250, margin: "0 auto" }}
+        >
+          <div className="tilt">
+            <div className="card">
+              <div className="img-container">
+                <img className="profile" src="https://www.seekpng.com/png/detail/62-628547_tom-jerry-png-boomerang-tv-tom-and-jerry.png" alt="" />
+              </div>
+              <div className="card-details">
+                <h2>I'm Shin Khant</h2>
+                <p>
+                  Iron Man is a fictional superhero appearing in American comic
+                  books published by Marvel Comics. The character was co-created
+                  by writer and editor Stan Lee, developed by scripter Larry
+                  Lieber, and designed by artists Don Heck and Jack Kirby.{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+        </Tilt>
           </div>
         </div>
       </div>
