@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { Tilt } from "react-tilt";
+import WOW from "wow.js";
 import "animate.css";
 import { Button } from "@mantine/core";
 import { FiFacebook, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
@@ -16,6 +17,15 @@ const defaultOptions = {
   reset: true, // If the tilt effect has to be reset on exit.
   easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
 };
+
+const wow = new WOW({
+  boxClass: "wow", // default
+  animateClass: "animate__animated", // default
+  offset: 0, // default
+  mobile: true, // default
+  live: true, // default
+});
+wow.init();
 
 const HeroSection = () => {
   return (
@@ -36,9 +46,8 @@ const HeroSection = () => {
 
             <h1 className=" text-6xl font-bold ">
               Hi, We're
-              <span className=" text-red-500 wow animate__backInUp">
-                {" "}
-                Team A
+              <span className=" text-red-500 ">
+                <p className="wow animate__backInUp inline-block">Team A</p>
               </span>
             </h1>
 
