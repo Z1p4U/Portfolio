@@ -9,10 +9,9 @@ const Home = () => {
     <div>
       <div>
         <HeroSection />
-        {/* <ProjectShowcase /> */}
         {/* <Skills /> */}
         <TimelineComponent />
-        <section className=" h-screen"></section>
+        <ProjectShowcase/>
       </div>
     </div>
   );

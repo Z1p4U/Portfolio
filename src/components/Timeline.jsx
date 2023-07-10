@@ -5,7 +5,7 @@ import CreditCardIcon from '@rsuite/icons/legacy/CreditCard';
 import PlaneIcon from '@rsuite/icons/legacy/Plane';
 import TruckIcon from '@rsuite/icons/legacy/Truck';
 import UserIcon from '@rsuite/icons/legacy/User';
-import CheckIcon from '@rsuite/icons/legacy/Check';
+import CheckIcon from '@rsuite/icons/Check';
 import 'rsuite/dist/rsuite.min.css';
 
 const  wow = new WOW(
@@ -25,38 +25,33 @@ const TimelineComponent = () => {
   return (
     <div className=" overflow-x-hidden">
           <Timeline className="custom-timeline" align="alternate">
-    <Timeline.Item dot={<CreditCardIcon />}>
-      <p className=" wow animate__fadeInRight">March 1, 10:20</p>
-      <p className=" wow animate__fadeInRight">Your order starts processing</p>
+    <Timeline.Item>
+      <p className=" wow animate__fadeInRight font-bold text-md">October 1, 2021</p>
+      <p className=" wow animate__fadeInRight">We start Basic Web Desgin</p>
+    </Timeline.Item>
+    <Timeline.Item dot={<CheckIcon style={{  borderRadius: '50%', background: '#15b215', color: '#fff' }} />}>
+      <p className=" wow animate__fadeInLeft font-bold text-md">December 12, 2021</p>
+      <p className=" wow animate__fadeInLeft">We finished Basic Web Desgin</p>
     </Timeline.Item>
     <Timeline.Item>
-      <p className=" wow animate__fadeInLeft">March 1, 11:34</p>
-      <p className=" wow animate__fadeInLeft">The package really waits for the company to pick up the goods</p>
+      <p className=" wow animate__fadeInRight font-bold text-md">January 1, 2022</p>
+      <p className=" wow animate__fadeInRight">We joining mmsit from Special Web Desgin</p>
+    </Timeline.Item>
+    <Timeline.Item dot={<CheckIcon style={{  borderRadius: '50%', background: '#15b215', color: '#fff' }} />}>
+      <p className=" wow animate__fadeInLeft font-bold text-md">March 2, 2022</p>
+      <p className=" wow animate__fadeInLeft">We finished Special Web Desgin</p>
     </Timeline.Item>
     <Timeline.Item>
-      <p className=" wow animate__fadeInRight">March 1, 16:20</p>
-      <p className=" wow animate__fadeInRight">[Packed]</p>
-      <p className=" wow animate__fadeInRight">Beijing company has received the shipment</p>
+      <p className=" wow animate__fadeInRight font-bold text-md">April 1, 2022</p>
+      <p className=" wow animate__fadeInRight">We joining mmsit from Web Application Development</p>
     </Timeline.Item>
-    <Timeline.Item dot={<PlaneIcon />}>
-      <p className=" wow animate__fadeInLeft">March 2, 06:12</p>
-      <p className=" wow animate__fadeInLeft">[In transit]</p>
-      <p className=" wow animate__fadeInLeft">Order has been shipped from Beijing to Shanghai</p>
+    <Timeline.Item dot={<CheckIcon style={{  borderRadius: '50%', background: '#15b215', color: '#fff' }} />}>
+      <p className=" wow animate__fadeInLeft font-bold text-md">July 28, 2022</p>
+      <p className=" wow animate__fadeInLeft">We finished Web Application Development</p>
     </Timeline.Item>
-    <Timeline.Item dot={<TruckIcon />}>
-      <p className=" wow animate__fadeInRight">March 2, 09:20</p>
-      <p className=" wow animate__fadeInRight">[In transit]</p>
-      <p className=" wow animate__fadeInRight">Sended from the Shanghai Container Center to the distribution center</p>
-    </Timeline.Item>
-    <Timeline.Item dot={<UserIcon />}>
-      <p className=" wow animate__fadeInLeft">March 3, 14:20</p>
-      <p className=" wow animate__fadeInLeft">[Delivery]</p>
-      <p className=" wow animate__fadeInLeft">Shanghai Hongkou District Company Deliverer: Mr. Li, currently sending you a shipment</p>
-    </Timeline.Item>
-    <Timeline.Item dot={<CheckIcon style={{ background: '#15b215', color: '#fff' }} />}>
-      <p className=" wow animate__fadeInRight">March 3, 17:50</p>
-      <p className=" wow animate__fadeInRight">[Received]]</p>
-      <p className=" wow animate__fadeInRight">Your courier has arrived and the signer is the front desk</p>
+    <Timeline.Item>
+      <p className=" wow animate__fadeInRight font-bold text-md">Jun 28, 2023</p>
+      <p className=" wow animate__fadeInRight">We joining Workshop</p>
     </Timeline.Item>
   </Timeline>
     </div>
