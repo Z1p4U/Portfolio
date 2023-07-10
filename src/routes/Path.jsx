@@ -12,7 +12,7 @@ const Path = () => {
   return (
     <>
       <Navbar />
-      <div className=" container mx-auto ">
+      <div className=" container mx-auto px-5 md:px-40 ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />

@@ -55,10 +55,10 @@ const Navbar = () => {
         scroll ? " bg-[#E7F6ED]" : "shadow bg-white/60"
       } w-full fixed top-0 left-0 z-50`}
     >
-      <div className={` w-full h-[80px] items-center flex myGlass opacity-50`}>
+      <div className={` w-full h-[80px] items-center flex myGlass opacity-70`}>
         <div className=" w-full ">
           <div className={``}>
-            <div className=" container md:px-[0rem] lg:px-[13rem] mx-auto w-full flex justify-between items-center px-5 m-0 ">
+            <div className=" container mx-auto px-5 md:px-40 w-full flex justify-between items-center m-0 ">
               <div>
                 <span className=" text-[25px] font-[500]">Hously</span>
               </div>
