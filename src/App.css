@@ -224,3 +224,14 @@
   color: white;
   text-shadow: 2px 2px 20px white;
 }
+
+/* Skills */
+
+.icon {
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: #3b82f6;
+  filter: grayscale(0) drop-shadow(1px 3px 3px #3b82f6);
+}

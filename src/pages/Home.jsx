@@ -9,8 +9,8 @@ const Home = () => {
     <div>
       <div>
         <HeroSection />
-        {/* <ProjectShowcase /> */}
-        {/* <Skills /> */}
+        <ProjectShowcase />
+        <Skills />
         <TimelineComponent />
         <section className=" h-screen"></section>
       </div>
