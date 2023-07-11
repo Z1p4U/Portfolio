@@ -25,6 +25,7 @@ import {
 } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { SiMysql } from "react-icons/si";
+import Skills from "../components/Skills";
 const About = () => {
   const wowjs = new WOW({
     boxClass: "wow", // default
@@ -191,7 +192,7 @@ const About = () => {
           </Timeline>
         </div>
       </div>
-      <div className=" mt-[150px]">
+      {/* <div className=" mt-[150px]">
         <div className=" my-10">
           <h2 className=" flex justify-center text-4xl text-gray-600 font-semibold">
             Skills
@@ -207,12 +208,13 @@ const About = () => {
             <BiLogoRedux className="hover:text-blue-500 transition-all text-9xl mx-auto icon col-start-3 col-span-1 row-start-2 row-span-1" />
             <BsGithub className="hover:text-blue-500 transition-all text-9xl mx-auto icon col-start-4 col-span-1 row-start-2 row-span-1" />
             <FaGitlab className="hover:text-blue-500 transition-all text-9xl mx-auto icon col-start-5 col-span-1 row-start-2 row-span-1" />
-            {/* <FaPhp className=" text-9xl mx-auto icon col-start-1 col-span-1 row-start-1 row-span-1" /> */}
-            {/* <SiMysql className=" text-9xl mx-auto icon col-start-1 col-span-1 row-start-1 row-span-1" /> */}
-            {/* <FaLaravel className=" text-9xl mx-auto icon col-start-1 col-span-1 row-start-1 row-span-1" /> */}
+            <FaPhp className=" text-9xl mx-auto icon col-start-1 col-span-1 row-start-1 row-span-1" />
+            <SiMysql className=" text-9xl mx-auto icon col-start-1 col-span-1 row-start-1 row-span-1" />
+            <FaLaravel className=" text-9xl mx-auto icon col-start-1 col-span-1 row-start-1 row-span-1" />
           </div>
         </div>
-      </div>
+      </div> */}
+      <Skills />
       <div className="  w-[100%]  my-[50px] ">
         <div className="flex items-center flex-col gap-3">
           <p className=" text-4xl text-center font-semibold">Contact Us</p>

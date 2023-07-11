@@ -35,9 +35,9 @@
 
 .icon-btn {
   border: 1px solid rgb(59 130 246);
-  padding: 5px 5px;
+  padding: 7px 7px;
   border-radius: 50%;
-  color: rgb(59 130 246);
+  color: rgb(115, 167, 251);
   font-weight: 500;
   font-size: large;
   transition: 0.4s;
