@@ -37,7 +37,7 @@ const About = () => {
   return (
     <>
       {" "}
-      <div className="  mt-[50px]">
+      <div className="  mt-[50px] pt-20">
         <p className=" text-4xl text-center font-semibold">About Us</p>
         <div className=" flex  bg-white px-3 mx-auto w-fit rounded-md font-semibold mt-[20px] text-gray-600">
           {" "}
@@ -51,9 +51,9 @@ const About = () => {
             About
           </p>
         </div>
-        <div className=" flex flex-col-reverse mt-[50px] gap-2 items-center md:flex-row-reverse w-[100%]  lg:flex-row-reverse">
+        <div className=" flex flex-col-reverse mt-[50px] gap-2 items-center md:flex-col-reverse w-[100%]  lg:flex-row-reverse">
           {" "}
-          <div className=" flex flex-col gap-2 lg:w-[45%]  md:w-[50%] w-[100%] wow animate__fadeInRight  ">
+          <div className=" flex flex-col gap-2 lg:w-[45%]  md:w-full w-[100%] wow animate__fadeInRight  ">
             <div className=" mt-[20px] md:mt-0 lg:mt-0 xl:mt-0">
               {" "}
               <p className=" text-[20px] font-semibold text-gray-500  ">
@@ -92,7 +92,7 @@ const About = () => {
             </button>
           </div>
           <img
-            className=" object-cover w-[95%] mx-auto h-[25vh] md:w-[fit-content] md:h-[35vh] lg:w-[46%] lg:h-[50vh] shadow-md rounded-md wow animate__fadeInLeft"
+            className=" object-cover w-[95%] mx-auto h-[25vh] md:w-full md:h-[35vh] lg:w-[46%] lg:h-[50vh] shadow-md rounded-md wow animate__fadeInLeft"
             src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
             alt=""
           />
@@ -213,7 +213,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="  w-[100%]  mt-[150px] ">
+      <div className="  w-[100%]  my-[50px] ">
         <div className="flex items-center flex-col gap-3">
           <p className=" text-4xl text-center font-semibold">Contact Us</p>
           {/* <div className="text-center mt-5">

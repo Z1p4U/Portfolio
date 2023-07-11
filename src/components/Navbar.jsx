@@ -8,7 +8,7 @@ const Navbar = () => {
   const [scrollTop, setScrollTop] = useState(0);
 
   const scrollHandler = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 400) {
       setScroll(false);
     } else {
       setScroll(true);
@@ -52,8 +52,8 @@ const Navbar = () => {
   return (
     <div
       className={` ${
-        scroll ? " bg-[#E7F6ED]" : "shadow bg-white/60"
-      } w-full fixed top-0 left-0 z-50`}
+        scroll ? " bg-[#E7F6ED]" : "shadow bg-white/60 sticky top-0 left-0"
+      } w-full z-50`}
     >
       <div className={` w-full h-[80px] items-center flex myGlass opacity-70`}>
         <div className=" w-full ">
@@ -98,7 +98,7 @@ const Navbar = () => {
                           : "anniSlideUp ani_delay_2"
                       }
                     >
-                      About Us
+                      <Link to={'/about'}>About Us</Link>
                     </li>
                     <li
                       className={

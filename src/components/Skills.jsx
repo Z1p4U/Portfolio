@@ -21,14 +21,14 @@ const Skills = () => {
   return (
     <div>
       <div className=" my-10">
-        <h2 className=" flex justify-center text-xl  font-semibold">
+        <h2 className=" flex justify-center text-sm md:text-xl  font-semibold">
           T E C H N O L O G I E S{" "}
           <span className="text-blue-500 ">
             &nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;
           </span>
           H A V E &nbsp;&nbsp;&nbsp;&nbsp; T O U C H E D
         </h2>
-        <div className=" grid justify-center items-center align-middle grid-cols-5 grid-rows-3 gap-6 my-5">
+        <div className=" mt-10 grid justify-center items-center align-middle grid-cols-5 grid-rows-2 gap-5 my-5 px-20">
           <FaHtml5 className=" text-9xl mx-auto my-auto icon col-start-1 col-span-1 row-start-1 row-span-1" />
           <FaCss3 className=" text-9xl mx-auto my-auto icon col-start-2 col-span-1 row-start-1 row-span-1" />
           <BiLogoJavascript className=" text-9xl mx-auto my-auto icon col-start-3 col-span-1 row-start-1 row-span-1" />
