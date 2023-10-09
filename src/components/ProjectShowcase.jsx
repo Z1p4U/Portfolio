@@ -27,7 +27,7 @@ const ProjectShowcase = () => {
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-blue-500">
                   Technology
                 </h5>
-                <div className=" mb-5">
+                <div className="flex flex-wrap gap-1 mb-5">
                   <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
                     React
                   </span>
@@ -96,7 +96,7 @@ const ProjectShowcase = () => {
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-blue-500">
                   Technology
                 </h5>
-                <div className=" mb-5">
+                <div className=" mb-5 flex flex-wrap gap-1">
                   <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
                     React
                   </span>
@@ -169,7 +169,7 @@ const ProjectShowcase = () => {
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-blue-500">
                   Technology
                 </h5>
-                <div className=" mb-5">
+                <div className=" mb-5 flex flex-wrap gap-1">
                   <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
                     React
                   </span>

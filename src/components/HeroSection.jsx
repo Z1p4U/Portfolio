@@ -34,10 +34,10 @@ const HeroSection = () => {
         <div className=" grid grid-cols-12 grid-rows-2 md:grid-rows-1">
           <div className=" row-start-2 row-span-1 md:row-start-1 col-start-1 col-span-12 md:col-span-7 py-8">
             <div className=" mb-8 text-[#3c3e41ae] text-xs lg:text-sm align-middle grid grid-cols-12">
-              <div className=" col-start-1 col-span-9 lg:col-span-7 mb-2">
+              <div className=" col-start-1 col-span-10 md:col-span-9 lg:col-span-7 mb-2">
                 C R A F T I N G &nbsp;&nbsp; E X P E R I E N C E S
               </div>
-              <div className=" col-start-5 col-span-9 lg:col-start-4 lg:col-span-7">
+              <div className=" col-start-4 md:col-start-5 col-span-10 md:col-span-9 lg:col-start-4 lg:col-span-7">
                 B U I L D I N G &nbsp;&nbsp; C O N N E C T I O N S
               </div>
             </div>
@@ -51,7 +51,7 @@ const HeroSection = () => {
               </span>
             </div>
 
-            <div className=" text-start typetext mt-8 w-[350px] lg:w-[550px] xl:w-[650px] h-[60px] xl:h-fit">
+            <div className=" text-start typetext mt-8 w-[300px] lg:w-[550px] xl:w-[650px] h-[60px] xl:h-fit">
               {/* <p className=" me-2 text-blue-500">We</p> */}
               <div className="">
                 <Typewriter
