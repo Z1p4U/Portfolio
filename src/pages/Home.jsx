@@ -9,10 +9,10 @@ const Home = () => {
     <div>
       <div>
         <HeroSection />
-        <ProjectShowcase />
         <Skills />
+        <ProjectShowcase />
+
         <TimelineComponent />
-        <section className=" h-screen"></section>
       </div>
     </div>
   );

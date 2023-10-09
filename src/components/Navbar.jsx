@@ -8,7 +8,7 @@ const Navbar = () => {
   const [scrollTop, setScrollTop] = useState(0);
 
   const scrollHandler = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 400) {
       setScroll(false);
     } else {
       setScroll(true);
@@ -52,13 +52,13 @@ const Navbar = () => {
   return (
     <div
       className={` ${
-        scroll ? " bg-[#E7F6ED]" : "shadow bg-white/60"
-      } w-full fixed top-0 left-0 z-50`}
+        scroll ? " bg-[#E7F6ED]" : "shadow bg-white/60 sticky top-0 left-0"
+      } w-full z-50`}
     >
-      <div className={` w-full h-[80px] items-center flex myGlass opacity-50`}>
+      <div className={` w-full h-[80px] items-center flex myGlass opacity-70`}>
         <div className=" w-full ">
           <div className={``}>
-            <div className=" container md:px-[0rem] lg:px-[13rem] mx-auto w-full flex justify-between items-center px-5 m-0 ">
+            <div className=" container mx-auto px-5 md:px-40 w-full flex justify-between items-center m-0 ">
               <div>
                 <span className=" text-[25px] font-[500]">Hously</span>
               </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
                           : "anniSlideUp ani_delay_2"
                       }
                     >
-                      About Us
+                      <Link to={'/about'}>About Us</Link>
                     </li>
                     <li
                       className={
@@ -115,6 +115,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
         <div className="progress-bar-container absolute left-0 top-7 w-full">
           <div className="w-full h-1.5">
             <div
@@ -122,6 +123,12 @@ const Navbar = () => {
               style={{ width: `${scrollTop}%` }}
             ></div>
           </div>
+
+        <div className="progress-bar-container absolute left-0 top-[4.95rem] w-full">
+        <div className="w-full h-1.5">
+          <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-1.5" style={{ width: `${scrollTop}%` }}></div>
+        </div>
+
         </div>
       </div>
       {/* inthere */}
