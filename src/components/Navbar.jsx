@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Sling as Hamburger } from 'hamburger-react'
+import { Sling as Hamburger } from "hamburger-react";
 // import {AiOutlineUser} from "react-icons/ai"
 
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
   }, [burger, clipPath]);
 
   window.addEventListener("scroll", scrollHandler);
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <div
@@ -76,7 +76,7 @@ const Navbar = () => {
               </div>
               <div className=" relative md:hidden">
                 <button className=" burger " onClick={() => setBurger(!burger)}>
-                <Hamburger toggled={isOpen} toggle={setOpen} />
+                  <Hamburger toggled={isOpen} toggle={setOpen} />
                 </button>
                 <div
                   className={burger ? "bg-clip-path" : "bg-clip-path active"}
@@ -115,10 +115,20 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
+        <div className="progress-bar-container absolute left-0 top-7 w-full">
+          <div className="w-full h-1.5">
+            <div
+              className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-1.5"
+              style={{ width: `${scrollTop}%` }}
+            ></div>
+          </div>
+
         <div className="progress-bar-container absolute left-0 top-[4.95rem] w-full">
         <div className="w-full h-1.5">
           <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-1.5" style={{ width: `${scrollTop}%` }}></div>
         </div>
+
         </div>
       </div>
       {/* inthere */}

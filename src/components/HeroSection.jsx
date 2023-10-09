@@ -101,6 +101,38 @@ const HeroSection = () => {
                 Let's collaborate and bring your web ideas to life!
               </p>
             </div>
+
+            <div className="my-6 flex flex-col gap-3 justify-start">
+              <div className="">
+                <button className=" btn">Explore Our Works</button>
+              </div>
+
+              <div className=" flex gap-2 align-middle items-center">
+                <button className=" icon-btn">
+                  <FiFacebook />
+                </button>
+                <button className=" icon-btn">
+                  <FiGithub />
+                </button>
+                <button className=" icon-btn">
+                  <FiLinkedin />
+                </button>
+                <button className=" icon-btn">
+                  <FiTwitter />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className=" col-start-1 md:col-start-8 col-span-12 md:col-span-4 h-fit">
+            <Tilt
+              options={defaultOptions}
+              className={" w-[300px] md:w-[250px] h-[450px] mx-auto"}
+            >
+              <div className="tilt">
+                <img
+                  className="profile w-[250px] md:w-[300px] h-[400px]"
+                  src="https://www.seekpng.com/png/detail/62-628547_tom-jerry-png-boomerang-tv-tom-and-jerry.png"
+
             <div className="my-8 flex flex-col gap-5 justify-start lg:flex-row lg:justify-between lg:pe-20">
               <div className=" flex gap-5 align-middle items-center">
                 <button className=" icon-btn">
@@ -131,6 +163,7 @@ const HeroSection = () => {
                 <img
                   className="profile w-full h-[500px]"
                   src="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=1060&t=st=1689104904~exp=1689105504~hmac=86926569a1e949559ae4ba93a699f36c050ebf6e69cfb79a8cd37fd80e1321d7"
+
                   alt=""
                 />
               </div>
