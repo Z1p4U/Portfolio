@@ -293,7 +293,44 @@
   color: white;
   text-shadow: 2px 2px 20px white;
 }
-  
+
+/* Skills */
+
+.icon {
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: #3b82f6;
+  filter: grayscale(0) drop-shadow(1px 3px 3px #3b82f6);
+}
+
+/* Footer */
+
+.grad {
+  background-image: linear-gradient(
+    to right,
+    #91b1e4,
+    #3b82f6,
+    #6397ec,
+    #3b82f6,
+    #91b1e4
+  );
+}
+.phrase {
+  text-shadow: 2px 2px 4px rgb(41, 92, 175);
+}
+
+.icon-btn-foot {
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 500;
+  font-size: large;
+  transition: 0.4s;
+}
+
 .icon-btn-foot:hover {
   background-color: #3b82f6;
   filter: grayscale(0) drop-shadow(1px 1px 1px #ffffff80)
@@ -345,4 +382,5 @@
   color: #3b82f6;
   background-color: white;
 }
+
 

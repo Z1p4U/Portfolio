@@ -11,6 +11,7 @@ const Home = () => {
         <HeroSection />
         <Skills />
         <ProjectShowcase />
+
         <TimelineComponent />
       </div>
     </div>

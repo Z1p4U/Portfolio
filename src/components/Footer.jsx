@@ -35,35 +35,66 @@ const Footer = () => {
               </button>
             </div>
 
-            <div className=" flex justify-center text-xs md:text-sm items-center gap-2 text-white align-middle">
+            <div className=" flex justify-center items-center gap-2 text-white align-middle">
               <Link to={"/"}>
-                <button className=" phrase-link">Home </button>
+                <p className=" phrase-link">Home </p>
               </Link>
               &oplus;
-              <Link to={"/showcase"}>
-                <button className=" phrase-link">Projects</button>
+              <Link to={"/projects"}>
+                <p className=" phrase-link">Projects</p>
               </Link>
               &oplus;
               <Link to={"/skills"}>
-                <button className=" phrase-link">Skills</button>
+                <p className=" phrase-link">Skills</p>
               </Link>
               &oplus;
-              <Link to={"/about-contact"}>
-                <button className=" phrase-link">About Us</button>
+              <Link to={"/about"}>
+                <p className=" phrase-link">About Us</p>
               </Link>
               &oplus;
               <Link to={"/contact"}>
-                <button className=" phrase-link">Contact Us</button>
+                <p className=" phrase-link">Contact Us</p>
               </Link>
             </div>
 
-            <div className=" mt-5 text-center">
-              <p className=" text-white phrase text-xs md:text-sm inline text-center">
+            <div className=" mt-5">
+              <p className=" text-white phrase text-lg flex align-middle items-center">
                 Designed And Implemented By Team A | &copy; 2023 |{" "}
-                <Link to={"credits"}>
-                  <button className=" ms-2 font-bold text-center inline-block">
+                <Link>
+                  <span className=" ms-2 text-[#c5c5c5]">
                     Credits & Attributions{" "}
-                  </button>
+                  </span>
+
+//             <div className=" flex justify-center text-xs md:text-sm items-center gap-2 text-white align-middle">
+//               <Link to={"/"}>
+//                 <button className=" phrase-link">Home </button>
+//               </Link>
+//               &oplus;
+//               <Link to={"/showcase"}>
+//                 <button className=" phrase-link">Projects</button>
+//               </Link>
+//               &oplus;
+//               <Link to={"/skills"}>
+//                 <button className=" phrase-link">Skills</button>
+//               </Link>
+//               &oplus;
+//               <Link to={"/about-contact"}>
+//                 <button className=" phrase-link">About Us</button>
+//               </Link>
+//               &oplus;
+//               <Link to={"/contact"}>
+//                 <button className=" phrase-link">Contact Us</button>
+//               </Link>
+//             </div>
+
+//             <div className=" mt-5 text-center">
+//               <p className=" text-white phrase text-xs md:text-sm inline text-center">
+//                 Designed And Implemented By Team A | &copy; 2023 |{" "}
+//                 <Link to={"credits"}>
+//                   <button className=" ms-2 font-bold text-center inline-block">
+//                     Credits & Attributions{" "}
+//                   </button>
+
                 </Link>
               </p>
             </div>

@@ -42,6 +42,12 @@ const HeroSection = () => {
               </div>
             </div>
 
+// <<<<<<< skill&footer
+//             <h1 className=" text-6xl font-bold ">
+//               Hi, We're
+//               <span className=" text-red-500 ">
+//                 <p className="wow animate__backInUp inline-block">Team A</p>
+// =======
             <div className=" text-5xl text-start md:text-6xl font-bold ">
               <h1>Hi!</h1>
               <h1 className=" inline-block">We're</h1>
