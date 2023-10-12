@@ -48,7 +48,7 @@ const HeroSection = () => {
               <span className=" text-[#8338ec]">
                 {" "}
                 <p className="wow animate__fadeInRight inline-block">
-                  Thant Zin Htet
+                  Thant Zin
                 </p>
               </span>
             </div>
@@ -71,17 +71,17 @@ const HeroSection = () => {
                       .pauseFor(1500)
                       .deleteChars(28)
 
-                      .typeString("Have Strong Passion And Eager To Learn.")
-                      .changeDeleteSpeed(0.3)
-                      .pauseFor(1500)
-                      .deleteChars(39)
+                      // .typeString("Have Strong Passion And Eager To Learn.")
+                      // .changeDeleteSpeed(0.3)
+                      // .pauseFor(1500)
+                      // .deleteChars(39)
 
                       .typeString(
-                        "Love Building Beautiful and User-Friendly Websites."
+                        "Love Building Beautiful and Maintainable Websites."
                       )
                       .changeDeleteSpeed(0.3)
                       .pauseFor(1500)
-                      .deleteChars(46)
+                      .deleteChars(45)
 
                       .changeDelay(100)
                       .typeString("Web Development!")
@@ -106,7 +106,7 @@ const HeroSection = () => {
 
             <div className="my-6 flex justify-between me-20">
               <div className="">
-                <button className=" btn">Explore Our Works</button>
+                <button className=" btn">Explore My Works</button>
               </div>
 
               <div className=" flex gap-2 align-middle items-center">
@@ -143,7 +143,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <hr className=" w-full px-0 mx-0" />
       </div>
     </>
   );

@@ -224,7 +224,6 @@ const ProjectShowcase = () => {
           </div>
         </div>
       </div>
-      <hr className=" w-full px-0 mx-0" />
     </>
   );
 };

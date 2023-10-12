@@ -223,7 +223,7 @@ const Navbar = () => {
       <div className="progress-bar-container absolute left-0 top-[4.95rem] w-full">
         <div className="w-full h-1.5">
           <div
-            className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-1.5"
+            className="bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-40% to-emerald-600 to-90% h-1.5"
             style={{ width: `${scrollTop}%` }}
           ></div>
         </div>
