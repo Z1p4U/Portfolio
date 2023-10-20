@@ -38,7 +38,7 @@ const About = () => {
   return (
     <>
       {" "}
-      <div className="  mt-[50px] pt-20">
+      <div className=" md:min-h-screen  mt-[50px] pt-20">
         <p className=" text-4xl text-center font-semibold">About Us</p>
         <div className=" flex  bg-white px-3 mx-auto w-fit rounded-md font-semibold mt-[20px] text-gray-600">
           {" "}

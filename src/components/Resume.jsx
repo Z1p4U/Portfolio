@@ -41,7 +41,7 @@ const Resume = () => {
         ref={targetRef}
         className=" min-h-screen about-section pt-24 lg:pt-28 xl:pt-32"
       >
-        <div className=" container mx-auto mt-40">
+        <div className=" container mx-auto mt-[250px] md:mt-40 ">
           <div className="section-heading relative overflow-hidden pb-14 text-center">
             <h2 className="relative z-10 mb-2 uppercase lg:text-3xl text-[#bebebe] font-bold">
               My Resume

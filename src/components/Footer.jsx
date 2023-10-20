@@ -47,7 +47,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className=" flex justify-center items-center gap-2 text-white align-middle lili">
+            <div className=" flex justify-center text-[10px] items-center gap-2 text-white align-middle lili">
               <Link to={"/"}>
                 <p className=" phrase-link">Home </p>
               </Link>
